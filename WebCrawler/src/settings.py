@@ -1,4 +1,4 @@
-# Scrapy settings for SummerFestival project
+# Scrapy settings for src project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,14 +7,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "SummerFestival"
+BOT_NAME = "src"
 
-SPIDER_MODULES = ["SummerFestival.spiders"]
-NEWSPIDER_MODULE = "SummerFestival.spiders"
+SPIDER_MODULES = ["src.spiders"]
+NEWSPIDER_MODULE = "src.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = "SummerFestival (+http://www.yourdomain.com)"
+#USER_AGENT = "src (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    "SummerFestival.middlewares.SummerfestivalSpiderMiddleware": 543,
+#    "src.middlewares.SummerfestivalSpiderMiddleware": 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    "SummerFestival.middlewares.SummerfestivalDownloaderMiddleware": 543,
+#    "src.middlewares.SummerfestivalDownloaderMiddleware": 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    "SummerFestival.pipelines.SummerfestivalPipeline": 300,
+#    "src.pipelines.SummerfestivalPipeline": 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)

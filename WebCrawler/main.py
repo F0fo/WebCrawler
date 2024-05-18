@@ -1,9 +1,9 @@
 import psycopg2
 import json
-conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="P@ssw0rd", port="5432")
+conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", password="1234", port="5432")
 
 cur = conn.cursor()
-with open('output.json',  encoding="utf8") as file:
+with open('src/output.json', encoding="utf8") as file:
     data = json.load(file)
 
 

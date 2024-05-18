@@ -1,7 +1,6 @@
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 import re
-import psycopg2
 
 class CrawlingSpider(CrawlSpider):
     name = 'mycrawler'
