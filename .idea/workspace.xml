@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceffc32d-7e07-4c61-9085-86303b1f429c" name="Changes" comment="Crawling through the english programs">
+    <list default="true" id="ceffc32d-7e07-4c61-9085-86303b1f429c" name="Changes" comment="crawling through all requirments + saving in a json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crawler/SummerFestival/SummerFestival/spiders/crawling_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawler/SummerFestival/SummerFestival/spiders/crawling_spider.py" afterDir="false" />
     </list>
@@ -74,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715878139342</updated>
       <workItem from="1715878142266" duration="1001000" />
-      <workItem from="1715972040679" duration="19061000" />
+      <workItem from="1715972040679" duration="22481000" />
     </task>
     <task id="LOCAL-00001" summary="Crawling through the english programs">
       <option name="closed" value="true" />
@@ -84,7 +84,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715976196662</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="crawling through all requirments + saving in a json">
+      <option name="closed" value="true" />
+      <created>1715994639400</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715994639400</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,6 +117,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Crawling through the english programs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Crawling through the english programs" />
+    <MESSAGE value="crawling through all requirments + saving in a json" />
+    <option name="LAST_COMMIT_MESSAGE" value="crawling through all requirments + saving in a json" />
   </component>
 </project>
