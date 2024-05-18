@@ -4,14 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceffc32d-7e07-4c61-9085-86303b1f429c" name="Changes" comment="crawling through all requirments + saving in a json">
+    <list default="true" id="ceffc32d-7e07-4c61-9085-86303b1f429c" name="Changes" comment="fixed performer list, spaces between words and remove correct non needed elements">
+      <change afterPath="$PROJECT_DIR$/Crawler/SummerFestival/SummerFestival/spiders/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crawler/SummerFestival/SummerFestival/spiders/output.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crawler/SummerFestival/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crawler/SummerFestival/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crawler/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crawler/SummerFestival/SummerFestival/spiders/crawling_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawler/SummerFestival/SummerFestival/spiders/crawling_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crawler/SummerFestival/output.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,6 +54,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.crawling_spider.executor": "Run",
+    "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
@@ -54,6 +69,9 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Fofo\Desktop\work\FutureDemand\pythonProject\Crawler\SummerFestival\SummerFestival\spiders" />
+      <recent name="C:\Users\Fofo\Desktop\work\FutureDemand\pythonProject\Crawler\SummerFestival" />
+      <recent name="C:\Users\Fofo\Desktop\work\FutureDemand\pythonProject\Crawler\SummerFestival\SummerFestival" />
       <recent name="C:\Users\Fofo\Desktop\work\FutureDemand\pythonProject\Crawler" />
     </key>
   </component>
@@ -74,7 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1715878139342</updated>
       <workItem from="1715878142266" duration="1001000" />
-      <workItem from="1715972040679" duration="22481000" />
+      <workItem from="1715972040679" duration="34059000" />
     </task>
     <task id="LOCAL-00001" summary="Crawling through the english programs">
       <option name="closed" value="true" />
@@ -92,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715994639400</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed performer list, spaces between words and remove correct non needed elements">
+      <option name="closed" value="true" />
+      <created>1716050745448</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716050745448</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +144,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Crawling through the english programs" />
     <MESSAGE value="crawling through all requirments + saving in a json" />
-    <option name="LAST_COMMIT_MESSAGE" value="crawling through all requirments + saving in a json" />
+    <MESSAGE value="fixed performer list, spaces between words and remove correct non needed elements" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed performer list, spaces between words and remove correct non needed elements" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/pythonProject$crawling_spider.coverage" NAME="crawling_spider Coverage Results" MODIFIED="1716063874362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crawler/SummerFestival/SummerFestival/spiders" />
+    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1716065055637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crawler/SummerFestival/SummerFestival/spiders" />
   </component>
 </project>

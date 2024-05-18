@@ -1,6 +1,7 @@
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 import re
+import psycopg2
 
 class CrawlingSpider(CrawlSpider):
     name = 'mycrawler'
@@ -18,12 +19,7 @@ class CrawlingSpider(CrawlSpider):
             'location': re.sub('(\r\n)+|(\xa0)+|(\n)+|(\t)',' ', ''.join(response.css('.medium-9 p::text ').getall()[-3:])), #Must update to give a location to conerts in the streets
             'date_time': re.sub('(\n)+|(\t)+','',''.join(response.css('.subtitle ::text').getall()[3].split('|')[:2])),
             'artist': list(filter(lambda isempty: len(isempty) > 0,map(lambda remove: re.sub('(\n)+|(\t)+|(  +)', '', remove), response.css('.performers-list ::text').getall()))),
-            'works': list(filter(lambda isempty: len(isempty) > 1,map(lambda remove: re.sub('(\n)+|(\t)+|(  +) |(\r)+ | (\xa0)+', '', remove), response.css('.cell .medium-9 ::text').getall())))[:-5]   ,
-            'image_link': 'www.lucernefestival.ch' + response.xpath('//picture').get().split('<img src=')[1].lstrip().split(' ')[0][1:-1]
-
-,
+            'works': list(filter(lambda isempty: len(isempty) > 1,map(lambda remove: re.sub('(\n)+|(\t)+|(  +) |(\r)+ | (\xa0)+', '', remove), response.css('.cell .medium-9 ::text').getall())))[:-5],
+            'image_link': 'www.lucernefestival.ch' + response.xpath('//picture').get().split('<img src=')[1].lstrip().split(' ')[0][1:-1],
         }
-#
-
-
 
