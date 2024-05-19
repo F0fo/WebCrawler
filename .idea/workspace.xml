@@ -4,23 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ceffc32d-7e07-4c61-9085-86303b1f429c" name="Changes" comment="connect to DB. upload scraped output">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="ceffc32d-7e07-4c61-9085-86303b1f429c" name="Changes" comment="postgres docker, restructure directory">
+      <change afterPath="$PROJECT_DIR$/DockerfileScraper" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WebCrawler/commands.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirments.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler/SummerFestival/SummerFestival/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebCrawler/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler/SummerFestival/SummerFestival/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebCrawler/src/items.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler/SummerFestival/SummerFestival/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebCrawler/src/middlewares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler/SummerFestival/SummerFestival/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebCrawler/src/pipelines.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler/SummerFestival/SummerFestival/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebCrawler/src/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler/SummerFestival/SummerFestival/spiders/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebCrawler/src/spiders/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler/SummerFestival/SummerFestival/spiders/crawling_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebCrawler/src/spiders/crawling_spider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler/SummerFestival/SummerFestival/spiders/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebCrawler/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler/SummerFestival/SummerFestival/spiders/output.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler/SummerFestival/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebCrawler/src/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler/SummerFestival/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler/SummerFestival/scrapy.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/WebCrawler/scrapy.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WebCrawler/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/DockerfilePostgres" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebCrawler/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebCrawler/src/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebCrawler/src/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebCrawler/src/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/WebCrawler/src/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,9 +70,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Fofo\Desktop\work\FutureDemand\pythonProject" />
       <recent name="C:\Users\Fofo\Desktop\work\FutureDemand\pythonProject\WebCrawler" />
       <recent name="C:\Users\Fofo\Desktop\work\FutureDemand\pythonProject\WebCrawler\src" />
-      <recent name="C:\Users\Fofo\Desktop\work\FutureDemand\pythonProject" />
       <recent name="C:\Users\Fofo\Desktop\work\FutureDemand\pythonProject\Crawler\SummerFestival\SummerFestival\spiders" />
       <recent name="C:\Users\Fofo\Desktop\work\FutureDemand\pythonProject\Crawler\SummerFestival" />
     </key>
@@ -103,7 +96,7 @@
       <workItem from="1715878142266" duration="1001000" />
       <workItem from="1715972040679" duration="34479000" />
       <workItem from="1716066621950" duration="2007000" />
-      <workItem from="1716069217573" duration="2353000" />
+      <workItem from="1716069217573" duration="8931000" />
     </task>
     <task id="LOCAL-00001" summary="Crawling through the english programs">
       <option name="closed" value="true" />
@@ -137,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716065672334</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="postgres docker, restructure directory">
+      <option name="closed" value="true" />
+      <created>1716071866485</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716071866485</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,10 +166,11 @@
     <MESSAGE value="crawling through all requirments + saving in a json" />
     <MESSAGE value="fixed performer list, spaces between words and remove correct non needed elements" />
     <MESSAGE value="connect to DB. upload scraped output" />
-    <option name="LAST_COMMIT_MESSAGE" value="connect to DB. upload scraped output" />
+    <MESSAGE value="postgres docker, restructure directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="postgres docker, restructure directory" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/pythonProject$crawling_spider.coverage" NAME="crawling_spider Coverage Results" MODIFIED="1716063874362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crawler/SummerFestival/SummerFestival/spiders" />
-    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1716065390750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Crawler/SummerFestival/SummerFestival/spiders" />
+    <SUITE FILE_PATH="coverage/pythonProject$main.coverage" NAME="main Coverage Results" MODIFIED="1716071441227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/WebCrawler" />
   </component>
 </project>
